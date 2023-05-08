@@ -195,6 +195,7 @@ Driver Enable pin, and optionally disable its Receiver Enable pin.
 */
 void ModbusMaster::preTransmission(void (*preTransmission)())
 {
+  delay(5);
   _preTransmission = preTransmission;
 }
 
